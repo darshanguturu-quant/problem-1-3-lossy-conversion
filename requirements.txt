@@ -1,0 +1,24 @@
+# Core Computation & Machine Learning
+numpy>=1.24.0
+scipy>=1.10.0
+scikit-learn>=1.3.0
+joblib>=1.3.0
+
+# Computer Vision & Deep Learning (CPU-compatible)
+torch>=2.0.0
+torchvision>=0.15.0
+open-clip-torch>=2.20.0
+opencv-python-headless>=4.8.0
+
+# Natural Language & Sentence Embeddings (Task 2)
+sentence-transformers>=2.2.0
+transformers>=4.30.0
+
+# Data Manipulation & Serialization
+pandas>=2.0.0
+pyarrow>=14.0.0
+pyyaml>=6.0.0
+pillow>=10.0.0
+
+# Testing
+pytest>=7.4.0

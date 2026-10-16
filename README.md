@@ -1,13 +1,27 @@
-# Problem 1.3: Lossy Conversion
+# Task 3 — Lossy Video Conversion
 
-## Submission instructions
+Metadata-driven video transcoding decision engine and financial break-even ROI analyzer ensuring compute costs do not exceed storage and transfer savings.
 
-1. Install the **AIntropy Grader Bot** GitHub App (https://github.com/apps/aintropy-grader-bot) and grant it access to your fork, if you haven't already — we can't evaluate your submission without this.
-2. Put your code under `src/`.
-3. Put your write-up under `docs/` — markdown, slides, a notebook, or another format of your choosing are all fine, as long as it's committed in this repo.
-4. Fill in `run.yaml` with the **exact** commands needed to set up and run your code. We run these commands exactly as written to evaluate your submission — this is the one part of the submission we read literally, not loosely: if `run.yaml` doesn't work, we can't see your code run.
-5. Push to your own fork's default branch any time during your test's time limit. No pull request is needed or expected.
+## Directory Structure
+- `src/`: Core implementation and CLI entrypoint.
+- `tests/`: Automated unit and integration test suite.
+- `specs/`: Engineering specifications (`PRD.md`, `ARCHITECTURE.md`, `PROGRESS.md`, `RULES.md`).
+- `docs/`: Technical writeups and task documentation.
+- `run.yaml`: Evaluator configuration and non-interactive commands.
+- `requirements.txt`: Environment dependencies.
 
-Once you start the test you have until your test's time limit to complete the assignment — see your invitation email for the exact duration. We ignore any commits pushed to your repo after that.
+## Execution & Verification Commands
+```bash
+# Setup dependencies
+pip install -r requirements.txt
 
-Questions? careers@aintropy.ai
+# Run Task Execution Commands
+python src/main.py --help
+python src/main.py analyze-conversion --dry-run
+
+# Run Test Suite
+pytest tests/ -v
+```
+
+## Grader Bot Integration (`run.yaml`)
+This folder is fully compatible with the [AIntropy Grader Bot](https://github.com/apps/aintropy-grader-bot).
